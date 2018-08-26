@@ -6,15 +6,23 @@
 
 Consider a simple lotka volterra model consisting of prey, $X$, and predators, $Y$. Prey reproduce at rate $a$ and die when consumed by predators at rate, $\beta XY$. Predators reproduce proportional to the consumption of prey, $\beta XY$, and die at a constant rate $\mu$. These assumptions give the following differential equations
 
+<!--
 $$
 \begin{aligned}
 \frac{dX}{dt} &= aX - \beta XY \\
 \frac{dY}{dt} &= \beta XY - \mu Y
 \end{aligned}
 $$
+-->
+
+<p align="center">
+  <img width="200" src="assets/eqn-1.png">
+</p>
 
 We can represent this system as set of propensity transitions between discrete quantities of $X$ and $Y$
 
+
+<!-- 
 $$
 \begin{aligned}
 T(x+1,y | x,y) &= a \\
@@ -22,9 +30,14 @@ T(x-1,y+1 | x,y) &= \beta XY \\
 T(x,y-1 | x,y) &= \mu
 \end{aligned}
 $$
+-->
+
+<p align="center">
+  <img width="300" src="assets/eqn-2.png">
+</p>
 
 These can be represented as a stoichiometric matrix, $\mathbf{S}$, and propensity vector, $\mathbf{p}$
-
+<!--
 $$
 \mathbf{S} =
 \begin{bmatrix}
@@ -33,10 +46,17 @@ $$
     0  &  1
 \end{bmatrix}
 $$
+-->
 
+<!--
 $$
 \mathbf{p} = (a, \beta XY, \mu)
 $$
+-->
+
+<p align="center">
+  <img width="150" src="assets/eqn-3.png">
+</p>
 
 ## Example
 
