@@ -22,7 +22,7 @@ $$
 We can represent this system as set of propensity transitions between discrete quantities of $X$ and $Y$
 
 
-<!-- 
+<!--
 $$
 \begin{aligned}
 T(x+1,y | x,y) &= a \\
@@ -48,6 +48,10 @@ $$
 $$
 -->
 
+<p align="center">
+  <img width="150" src="assets/eqn-3.png">
+</p>
+
 <!--
 $$
 \mathbf{p} = (a, \beta XY, \mu)
@@ -55,7 +59,7 @@ $$
 -->
 
 <p align="center">
-  <img width="150" src="assets/eqn-3.png">
+  <img width="150" src="assets/eqn-4.png">
 </p>
 
 ## Example
