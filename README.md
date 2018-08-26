@@ -1,8 +1,6 @@
 # TensorSim
 
-> GPU accelerated integration of Markov Jump Processes using TensorFlow
-
-Implementations of stochastic simulation algroithms using TensorFlow for fast and scalable simulation!
+> GPU accelerated stochastic simulation on TensorFlow!
 
 ## Mapping microscopic transitions
 
