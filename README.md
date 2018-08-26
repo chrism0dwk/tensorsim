@@ -4,7 +4,7 @@
 
 ## Mapping microscopic transitions
 
-Consider a simple lotka volterra model consisting of prey, $X$, and predators, $Y$. Prey reproduce at rate $a$ and die when consumed by predators at rate, $\beta XY$. Predators reproduce proportional to the consumption of prey, $\beta XY$, and die at a constant rate $\mu$. These assumptions give the following differential equations
+Consider a simple lotka volterra model consisting of prey, _X_, and predators, _Y_. Prey reproduce at rate _a_ and die when consumed by predators at rate, _βXY_. Predators reproduce proportional to the consumption of prey, _β_, and die at a constant rate _μ_. These assumptions give the following differential equations
 
 <!--
 $$
@@ -19,7 +19,7 @@ $$
   <img width="200" src="assets/eqn-1.png">
 </p>
 
-We can represent this system as set of propensity transitions between discrete quantities of $X$ and $Y$
+We can represent this system as set of propensity transitions between discrete quantities of _X_ and _Y_
 
 
 <!--
@@ -36,7 +36,7 @@ $$
   <img width="300" src="assets/eqn-2.png">
 </p>
 
-These can be represented as a stoichiometric matrix, $\mathbf{S}$, and propensity vector, $\mathbf{p}$
+These can be represented as a stoichiometric matrix, **S**, and propensity vector, **p**
 <!--
 $$
 \mathbf{S} =
