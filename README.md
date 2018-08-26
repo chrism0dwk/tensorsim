@@ -7,20 +7,20 @@
 Consider a simple lotka volterra model consisting of prey, $X$, and predators, $Y$. Prey reproduce at rate $a$ and die when consumed by predators at rate, $\beta XY$. Predators reproduce proportional to the consumption of prey, $\beta XY$, and die at a constant rate $\mu$. These assumptions give the following differential equations
 
 $$
-\frac{dX}{dt} = aX - \beta XY
-$$
-$$
-\frac{dY}{dt} = \beta XY - \mu Y
+\begin{aligned}
+\frac{dX}{dt} &= aX - \beta XY \\
+\frac{dY}{dt} &= \beta XY - \mu Y
+\end{aligned}
 $$
 
-We can represent this system as set of propensity transtions between discrete quantities of $X$ and $Y$
+We can represent this system as set of propensity transitions between discrete quantities of $X$ and $Y$
 
 $$
-\begin{align}
+\begin{aligned}
 T(x+1,y | x,y) &= a \\
 T(x-1,y+1 | x,y) &= \beta XY \\
 T(x,y-1 | x,y) &= \mu
-\end{align}
+\end{aligned}
 $$
 
 These can be represented as a stoichiometric matrix, $\mathbf{S}$, and propensity vector, $\mathbf{p}$
@@ -80,7 +80,7 @@ for q in range(n_reps):
 pl.ylim((0,1500))
 ```
 
-![predator prey](../assets/lotka-volterra.png)
+![predator prey](assets/lotka-volterra.png)
 
 
 ## Supported Stochastic Integration Algorithms
